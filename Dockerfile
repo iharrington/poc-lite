@@ -20,4 +20,7 @@ RUN curl -SLO https://download.litecoin.org/litecoin-${LC_VER}/linux/litecoin-${
   && rm *.tar.gz
 #REMOVE EXTRA FILES AND UNUSED APPS
 RUN apt autoremove --purge
+#Setup User 'litecoin' for security
+RUN groupadd --gid 2001 litecoin && useradd --home-dir /home/litecoin --create-home --uid 1001 --gid 2001 --shell /bin/sh --skel /dev/null litecoin
+USER litecoin
 CMD ["litecoind"]
