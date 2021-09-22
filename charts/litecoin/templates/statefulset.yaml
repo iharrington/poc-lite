@@ -27,6 +27,9 @@ spec:
       containers:
         - name: {{ .Chart.Name }}
           securityContext:
+            runAsNonRoot: {{ .Values.securityContext.runAsNonRoot }}
+            runAsUser: {{ .Values.securityContext.runAsUser }}
+            runAsGroup: {{ .Values.securityContext.runAsGroup }}
             allowPrivilegeEscalation: {{ .Values.securityContext.allowPrivilegeEscalation }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           ports:
@@ -35,7 +38,7 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           volumeMounts:
             - name: {{ template "litecoin.fullname" . }}
-              mountPath: /home/litecoin/.litecoin
+              mountPath: /home/litecoin/
   volumeClaimTemplates:
     - metadata:
         name: {{ template "litecoin.fullname" . }}
