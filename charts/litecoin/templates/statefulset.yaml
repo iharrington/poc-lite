@@ -26,6 +26,8 @@ spec:
     spec:
       containers:
         - name: {{ .Chart.Name }}
+          securityContext:
+            allowPrivilegeEscalation: {{ .Values.securityContext.allowPrivilegeEscalation }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           ports:
             - containerPort: {{ .Values.statefulset.containerPort }}
@@ -33,7 +35,7 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           volumeMounts:
             - name: {{ template "litecoin.fullname" . }}
-              mountPath: /mnt/data/
+              mountPath: /home/litecoin/.litecoin
   volumeClaimTemplates:
     - metadata:
         name: {{ template "litecoin.fullname" . }}

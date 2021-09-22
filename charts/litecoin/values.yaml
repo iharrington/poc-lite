@@ -72,12 +72,3 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
-
-secret_name: litecoin-secrets
-
-#ENV Vars
-env: Dev
-database_host: dragon-dev.postgres.database.azure.com
-database_name: dragon_dev
-database_password: P@ssw0rd!
-database_user: dragon_daily@dragon-dev

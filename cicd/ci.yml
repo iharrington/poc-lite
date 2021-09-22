@@ -8,7 +8,7 @@
         version: 1.0.0
 
     - name: Build poc-lite Docker Image
-      command: docker build -f Dockerfile -t iharrington/poc-lite:{{ item }} .
+      command: docker build -t iharrington/poc-lite:{{ item }} .
       args:
         chdir: "../"
       loop:

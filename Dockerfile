@@ -3,13 +3,7 @@ LABEL maintainer="Isaac Harrington"
 
 RUN apt update && apt upgrade -y
 #Install build reqs and deps https://github.com/litecoin-project/litecoin/blob/v0.18.1/doc/build-unix.md#ubuntu--debian
-RUN apt update && apt install -y pkg-config
-RUN apt update && apt install -y build-essential
-RUN apt update && apt install -y libtool
-RUN apt update && apt install -y autotools-dev
-RUN apt update && apt install -y automake
-RUN apt update && apt install -y bsdmainutils
-RUN apt update && apt install -y python3
+RUN apt update && apt install -y pkg-config build-essential libtool autotools-dev automake bsdmainutils python3
 RUN apt update && apt install -y libssl-dev libevent-dev libboost-system-dev libboost-filesystem-dev libboost-chrono-dev \
     libboost-test-dev libboost-thread-dev
 RUN apt update && apt install -y curl gnupg
