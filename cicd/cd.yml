@@ -9,6 +9,12 @@
 
     - name: Deploy litecoin Helm Chart
       command: helm upgrade --install litecoin ./charts/litecoin --version {{ version }}
+      args:
+        chdir: "../"
 
-    - name: Check logs
-      command: kubectl logs -l app=litecoin
+    - name: Verify pods are ready
+      command: kubectl get pods -l app=litecoin -o jsonpath='{.items[*].status.containerStatuses[*].ready}'
+      register: pod
+      until: "'false' not in pod.stdout | lower"
+      retries: 5
+      delay: 30
