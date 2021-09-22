@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ template "litecoin.fullname" . }}
+  labels:
+    app: {{ template "litecoin.fullname" . }}
+spec:
+  ports:
+    - port: {{ .Values.service.port }}
+      name: {{ template "litecoin.fullname" . }}
+  clusterIP: None
+  selector:
+    app: {{ template "litecoin.fullname" . }}

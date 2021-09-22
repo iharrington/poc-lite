@@ -1,0 +1,411 @@
+
+Testing poc-lite:1.0.0...
+
+✗ Low severity vulnerability found in xdg-user-dirs
+  Description: Improper Access Control
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-XDGUSERDIRS-347423
+  Introduced through: xdg-user-dirs@0.17-1ubuntu1
+  From: xdg-user-dirs@0.17-1ubuntu1
+  Image layer: Introduced by your base image (ubuntu:18.04)
+
+✗ Low severity vulnerability found in sqlite3/libsqlite3-0
+  Description: CVE-2020-9991
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-SQLITE3-1070682
+  Introduced through: gnupg2/gnupg@2.2.4-1ubuntu1.4, python3-defaults/python3@3.6.7-1~18.04, curl@7.58.0-2ubuntu3.15
+  From: gnupg2/gnupg@2.2.4-1ubuntu1.4 > gnupg2/gpg@2.2.4-1ubuntu1.4 > sqlite3/libsqlite3-0@3.22.0-1ubuntu0.4
+  From: python3-defaults/python3@3.6.7-1~18.04 > python3.6@3.6.9-1~18.04ubuntu1.4 > python3.6/libpython3.6-stdlib@3.6.9-1~18.04ubuntu1.4 > sqlite3/libsqlite3-0@3.22.0-1ubuntu0.4
+  From: curl@7.58.0-2ubuntu3.15 > curl/libcurl4@7.58.0-2ubuntu3.15 > openldap/libldap-2.4-2@2.4.45+dfsg-1ubuntu1.10 > heimdal/libgssapi3-heimdal@7.5.0+dfsg-1 > heimdal/libheimntlm0-heimdal@7.5.0+dfsg-1 > heimdal/libkrb5-26-heimdal@7.5.0+dfsg-1 > sqlite3/libsqlite3-0@3.22.0-1ubuntu0.4
+  Image layer: 'RUN /bin/sh -c apt update && apt install -y curl gnupg '
+
+✗ Low severity vulnerability found in sqlite3/libsqlite3-0
+  Description: Information Exposure
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-SQLITE3-1070693
+  Introduced through: gnupg2/gnupg@2.2.4-1ubuntu1.4, python3-defaults/python3@3.6.7-1~18.04, curl@7.58.0-2ubuntu3.15
+  From: gnupg2/gnupg@2.2.4-1ubuntu1.4 > gnupg2/gpg@2.2.4-1ubuntu1.4 > sqlite3/libsqlite3-0@3.22.0-1ubuntu0.4
+  From: python3-defaults/python3@3.6.7-1~18.04 > python3.6@3.6.9-1~18.04ubuntu1.4 > python3.6/libpython3.6-stdlib@3.6.9-1~18.04ubuntu1.4 > sqlite3/libsqlite3-0@3.22.0-1ubuntu0.4
+  From: curl@7.58.0-2ubuntu3.15 > curl/libcurl4@7.58.0-2ubuntu3.15 > openldap/libldap-2.4-2@2.4.45+dfsg-1ubuntu1.10 > heimdal/libgssapi3-heimdal@7.5.0+dfsg-1 > heimdal/libheimntlm0-heimdal@7.5.0+dfsg-1 > heimdal/libkrb5-26-heimdal@7.5.0+dfsg-1 > sqlite3/libsqlite3-0@3.22.0-1ubuntu0.4
+  Image layer: 'RUN /bin/sh -c apt update && apt install -y curl gnupg '
+
+✗ Low severity vulnerability found in shadow/passwd
+  Description: Time-of-check Time-of-use (TOCTOU)
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-SHADOW-306209
+  Introduced through: shadow/passwd@1:4.5-1ubuntu2, gnupg2/gnupg@2.2.4-1ubuntu1.4, shadow/login@1:4.5-1ubuntu2
+  From: shadow/passwd@1:4.5-1ubuntu2
+  From: gnupg2/gnupg@2.2.4-1ubuntu1.4 > gnupg2/dirmngr@2.2.4-1ubuntu1.4 > adduser@3.116ubuntu1 > shadow/passwd@1:4.5-1ubuntu2
+  From: shadow/login@1:4.5-1ubuntu2
+  Image layer: Introduced by your base image (ubuntu:18.04)
+
+✗ Low severity vulnerability found in shadow/passwd
+  Description: Incorrect Permission Assignment for Critical Resource
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-SHADOW-306233
+  Introduced through: shadow/passwd@1:4.5-1ubuntu2, gnupg2/gnupg@2.2.4-1ubuntu1.4, shadow/login@1:4.5-1ubuntu2
+  From: shadow/passwd@1:4.5-1ubuntu2
+  From: gnupg2/gnupg@2.2.4-1ubuntu1.4 > gnupg2/dirmngr@2.2.4-1ubuntu1.4 > adduser@3.116ubuntu1 > shadow/passwd@1:4.5-1ubuntu2
+  From: shadow/login@1:4.5-1ubuntu2
+  Image layer: Introduced by your base image (ubuntu:18.04)
+
+✗ Low severity vulnerability found in python3.6/libpython3.6-stdlib
+  Description: HTTP Request Smuggling
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-PYTHON36-1075584
+  Introduced through: python3-defaults/python3@3.6.7-1~18.04
+  From: python3-defaults/python3@3.6.7-1~18.04 > python3-defaults/libpython3-stdlib@3.6.7-1~18.04 > python3.6/libpython3.6-stdlib@3.6.9-1~18.04ubuntu1.4
+  From: python3-defaults/python3@3.6.7-1~18.04 > python3.6@3.6.9-1~18.04ubuntu1.4 > python3.6/libpython3.6-stdlib@3.6.9-1~18.04ubuntu1.4
+  From: python3-defaults/python3@3.6.7-1~18.04 > python3-defaults/python3-minimal@3.6.7-1~18.04 > python3.6/python3.6-minimal@3.6.9-1~18.04ubuntu1.4
+  and 4 more...
+  Image layer: Introduced by your base image (ubuntu:18.04)
+
+✗ Low severity vulnerability found in pcre3/libpcre3
+  Description: Uncontrolled Recursion
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-PCRE3-452543
+  Introduced through: meta-common-packages@meta
+  From: meta-common-packages@meta > pcre3/libpcre3@2:8.39-9
+  Image layer: Introduced by your base image (ubuntu:18.04)
+
+✗ Low severity vulnerability found in pcre3/libpcre3
+  Description: Out-of-bounds Read
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-PCRE3-572723
+  Introduced through: meta-common-packages@meta
+  From: meta-common-packages@meta > pcre3/libpcre3@2:8.39-9
+  Image layer: Introduced by your base image (ubuntu:18.04)
+
+✗ Low severity vulnerability found in pcre3/libpcre3
+  Description: Integer Overflow or Wraparound
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-PCRE3-572730
+  Introduced through: meta-common-packages@meta
+  From: meta-common-packages@meta > pcre3/libpcre3@2:8.39-9
+  Image layer: Introduced by your base image (ubuntu:18.04)
+
+✗ Low severity vulnerability found in patch
+  Description: Double Free
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-PATCH-303858
+  Introduced through: build-essential@12.4ubuntu1
+  From: build-essential@12.4ubuntu1 > dpkg/dpkg-dev@1.19.0.5ubuntu2.3 > patch@2.7.6-2ubuntu1.1
+  Image layer: 'RUN /bin/sh -c apt update && apt install -y build-essential '
+
+✗ Low severity vulnerability found in ncurses/libtinfo5
+  Description: Out-of-bounds Read
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-NCURSES-481908
+  Introduced through: ncurses/libtinfo5@6.1-1ubuntu1.18.04, bash@4.4.18-2ubuntu1.2, bsdmainutils@11.1.2ubuntu1, ncurses/libncurses5@6.1-1ubuntu1.18.04, ncurses/ncurses-bin@6.1-1ubuntu1.18.04, procps@2:3.3.12-3ubuntu1.2, util-linux/fdisk@2.31.1-0.4ubuntu3.7, util-linux/mount@2.31.1-0.4ubuntu3.7, gnupg2/gnupg@2.2.4-1ubuntu1.4, python3-defaults/python3@3.6.7-1~18.04, ncurses/libncursesw5@6.1-1ubuntu1.18.04, ncurses/ncurses-base@6.1-1ubuntu1.18.04
+  From: ncurses/libtinfo5@6.1-1ubuntu1.18.04
+  From: bash@4.4.18-2ubuntu1.2 > ncurses/libtinfo5@6.1-1ubuntu1.18.04
+  From: bsdmainutils@11.1.2ubuntu1 > ncurses/libtinfo5@6.1-1ubuntu1.18.04
+  and 18 more...
+  Image layer: 'RUN /bin/sh -c apt update && apt install -y bsdmainutils '
+
+✗ Low severity vulnerability found in ncurses/libtinfo5
+  Description: Out-of-bounds Read
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-NCURSES-482343
+  Introduced through: ncurses/libtinfo5@6.1-1ubuntu1.18.04, bash@4.4.18-2ubuntu1.2, bsdmainutils@11.1.2ubuntu1, ncurses/libncurses5@6.1-1ubuntu1.18.04, ncurses/ncurses-bin@6.1-1ubuntu1.18.04, procps@2:3.3.12-3ubuntu1.2, util-linux/fdisk@2.31.1-0.4ubuntu3.7, util-linux/mount@2.31.1-0.4ubuntu3.7, gnupg2/gnupg@2.2.4-1ubuntu1.4, python3-defaults/python3@3.6.7-1~18.04, ncurses/libncursesw5@6.1-1ubuntu1.18.04, ncurses/ncurses-base@6.1-1ubuntu1.18.04
+  From: ncurses/libtinfo5@6.1-1ubuntu1.18.04
+  From: bash@4.4.18-2ubuntu1.2 > ncurses/libtinfo5@6.1-1ubuntu1.18.04
+  From: bsdmainutils@11.1.2ubuntu1 > ncurses/libtinfo5@6.1-1ubuntu1.18.04
+  and 18 more...
+  Image layer: 'RUN /bin/sh -c apt update && apt install -y bsdmainutils '
+
+✗ Low severity vulnerability found in libtasn1-6
+  Description: Resource Management Errors
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-LIBTASN16-339588
+  Introduced through: libtasn1-6@4.13-2, curl@7.58.0-2ubuntu3.15
+  From: libtasn1-6@4.13-2
+  From: curl@7.58.0-2ubuntu3.15 > curl/libcurl4@7.58.0-2ubuntu3.15 > openldap/libldap-2.4-2@2.4.45+dfsg-1ubuntu1.10 > gnutls28/libgnutls30@3.5.18-1ubuntu1.5 > libtasn1-6@4.13-2
+  Image layer: 'RUN /bin/sh -c apt update && apt install -y curl gnupg '
+
+✗ Low severity vulnerability found in krb5/libkrb5support0
+  Description: Integer Overflow or Wraparound
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-KRB5-459140
+  Introduced through: curl@7.58.0-2ubuntu3.15, krb5/krb5-locales@1.16-2ubuntu0.2
+  From: curl@7.58.0-2ubuntu3.15 > curl/libcurl4@7.58.0-2ubuntu3.15 > krb5/libgssapi-krb5-2@1.16-2ubuntu0.2 > krb5/libkrb5support0@1.16-2ubuntu0.2
+  From: curl@7.58.0-2ubuntu3.15 > curl/libcurl4@7.58.0-2ubuntu3.15 > krb5/libgssapi-krb5-2@1.16-2ubuntu0.2 > krb5/libk5crypto3@1.16-2ubuntu0.2 > krb5/libkrb5support0@1.16-2ubuntu0.2
+  From: curl@7.58.0-2ubuntu3.15 > curl/libcurl4@7.58.0-2ubuntu3.15 > krb5/libgssapi-krb5-2@1.16-2ubuntu0.2 > krb5/libkrb5-3@1.16-2ubuntu0.2 > krb5/libkrb5support0@1.16-2ubuntu0.2
+  and 5 more...
+  Image layer: 'RUN /bin/sh -c apt update && apt install -y curl gnupg '
+
+✗ Low severity vulnerability found in krb5/libkrb5support0
+  Description: NULL Pointer Dereference
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-KRB5-646343
+  Introduced through: curl@7.58.0-2ubuntu3.15, krb5/krb5-locales@1.16-2ubuntu0.2
+  From: curl@7.58.0-2ubuntu3.15 > curl/libcurl4@7.58.0-2ubuntu3.15 > krb5/libgssapi-krb5-2@1.16-2ubuntu0.2 > krb5/libkrb5support0@1.16-2ubuntu0.2
+  From: curl@7.58.0-2ubuntu3.15 > curl/libcurl4@7.58.0-2ubuntu3.15 > krb5/libgssapi-krb5-2@1.16-2ubuntu0.2 > krb5/libk5crypto3@1.16-2ubuntu0.2 > krb5/libkrb5support0@1.16-2ubuntu0.2
+  From: curl@7.58.0-2ubuntu3.15 > curl/libcurl4@7.58.0-2ubuntu3.15 > krb5/libgssapi-krb5-2@1.16-2ubuntu0.2 > krb5/libkrb5-3@1.16-2ubuntu0.2 > krb5/libkrb5support0@1.16-2ubuntu0.2
+  and 5 more...
+  Image layer: 'RUN /bin/sh -c apt update && apt install -y curl gnupg '
+
+✗ Low severity vulnerability found in heimdal/libheimbase1-heimdal
+  Description: Key Management Errors
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-HEIMDAL-346634
+  Introduced through: curl@7.58.0-2ubuntu3.15, meta-common-packages@meta
+  From: curl@7.58.0-2ubuntu3.15 > curl/libcurl4@7.58.0-2ubuntu3.15 > openldap/libldap-2.4-2@2.4.45+dfsg-1ubuntu1.10 > heimdal/libgssapi3-heimdal@7.5.0+dfsg-1 > heimdal/libhcrypto4-heimdal@7.5.0+dfsg-1 > heimdal/libheimbase1-heimdal@7.5.0+dfsg-1
+  From: curl@7.58.0-2ubuntu3.15 > curl/libcurl4@7.58.0-2ubuntu3.15 > openldap/libldap-2.4-2@2.4.45+dfsg-1ubuntu1.10 > heimdal/libgssapi3-heimdal@7.5.0+dfsg-1 > heimdal/libheimntlm0-heimdal@7.5.0+dfsg-1 > heimdal/libkrb5-26-heimdal@7.5.0+dfsg-1 > heimdal/libheimbase1-heimdal@7.5.0+dfsg-1
+  From: curl@7.58.0-2ubuntu3.15 > curl/libcurl4@7.58.0-2ubuntu3.15 > openldap/libldap-2.4-2@2.4.45+dfsg-1ubuntu1.10 > heimdal/libgssapi3-heimdal@7.5.0+dfsg-1 > heimdal/libheimntlm0-heimdal@7.5.0+dfsg-1 > heimdal/libkrb5-26-heimdal@7.5.0+dfsg-1 > heimdal/libhx509-5-heimdal@7.5.0+dfsg-1 > heimdal/libheimbase1-heimdal@7.5.0+dfsg-1
+  and 14 more...
+  Image layer: 'RUN /bin/sh -c apt update && apt install -y curl gnupg '
+
+✗ Low severity vulnerability found in gnutls28/libgnutls30
+  Description: Information Exposure
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-GNUTLS28-340583
+  Introduced through: gnutls28/libgnutls30@3.5.18-1ubuntu1.5, apt@1.6.14, gnupg2/gnupg@2.2.4-1ubuntu1.4, curl@7.58.0-2ubuntu3.15
+  From: gnutls28/libgnutls30@3.5.18-1ubuntu1.5
+  From: apt@1.6.14 > gnutls28/libgnutls30@3.5.18-1ubuntu1.5
+  From: gnupg2/gnupg@2.2.4-1ubuntu1.4 > gnupg2/dirmngr@2.2.4-1ubuntu1.4 > gnutls28/libgnutls30@3.5.18-1ubuntu1.5
+  and 2 more...
+  Image layer: 'RUN /bin/sh -c apt update && apt install -y curl gnupg '
+
+✗ Low severity vulnerability found in gnupg2/gpgv
+  Description: Improper Certificate Validation
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-GNUPG2-453470
+  Introduced through: gnupg2/gpgv@2.2.4-1ubuntu1.4, apt@1.6.14, gnupg2/gnupg@2.2.4-1ubuntu1.4
+  From: gnupg2/gpgv@2.2.4-1ubuntu1.4
+  From: apt@1.6.14 > gnupg2/gpgv@2.2.4-1ubuntu1.4
+  From: gnupg2/gnupg@2.2.4-1ubuntu1.4 > gnupg2/gpgv@2.2.4-1ubuntu1.4
+  and 18 more...
+  Image layer: Introduced by your base image (ubuntu:18.04)
+
+✗ Low severity vulnerability found in glibc/libc6-dev
+  Description: Loop with Unreachable Exit Condition ('Infinite Loop')
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-GLIBC-1055781
+  Introduced through: build-essential@12.4ubuntu1, libtool@2.4.6-2, boost-defaults/libboost-thread-dev@1.65.1.0ubuntu1, glibc/libc-bin@2.27-3ubuntu1.4, meta-common-packages@meta
+  From: build-essential@12.4ubuntu1 > glibc/libc6-dev@2.27-3ubuntu1.4
+  From: libtool@2.4.6-2 > glibc/libc6-dev@2.27-3ubuntu1.4
+  From: boost-defaults/libboost-thread-dev@1.65.1.0ubuntu1 > boost1.65.1/libboost-thread1.65-dev@1.65.1+dfsg-0ubuntu5 > boost1.65.1/libboost1.65-dev@1.65.1+dfsg-0ubuntu5 > gcc-7/libstdc++-7-dev@7.5.0-3ubuntu1~18.04 > glibc/libc6-dev@2.27-3ubuntu1.4
+  and 3 more...
+  Image layer: 'RUN /bin/sh -c apt update && apt install -y build-essential '
+
+✗ Low severity vulnerability found in glibc/libc6-dev
+  Description: Out-of-bounds Read
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-GLIBC-1055791
+  Introduced through: build-essential@12.4ubuntu1, libtool@2.4.6-2, boost-defaults/libboost-thread-dev@1.65.1.0ubuntu1, glibc/libc-bin@2.27-3ubuntu1.4, meta-common-packages@meta
+  From: build-essential@12.4ubuntu1 > glibc/libc6-dev@2.27-3ubuntu1.4
+  From: libtool@2.4.6-2 > glibc/libc6-dev@2.27-3ubuntu1.4
+  From: boost-defaults/libboost-thread-dev@1.65.1.0ubuntu1 > boost1.65.1/libboost-thread1.65-dev@1.65.1+dfsg-0ubuntu5 > boost1.65.1/libboost1.65-dev@1.65.1+dfsg-0ubuntu5 > gcc-7/libstdc++-7-dev@7.5.0-3ubuntu1~18.04 > glibc/libc6-dev@2.27-3ubuntu1.4
+  and 3 more...
+  Image layer: 'RUN /bin/sh -c apt update && apt install -y build-essential '
+
+✗ Low severity vulnerability found in glibc/libc6-dev
+  Description: Reachable Assertion
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-GLIBC-1122575
+  Introduced through: build-essential@12.4ubuntu1, libtool@2.4.6-2, boost-defaults/libboost-thread-dev@1.65.1.0ubuntu1, glibc/libc-bin@2.27-3ubuntu1.4, meta-common-packages@meta
+  From: build-essential@12.4ubuntu1 > glibc/libc6-dev@2.27-3ubuntu1.4
+  From: libtool@2.4.6-2 > glibc/libc6-dev@2.27-3ubuntu1.4
+  From: boost-defaults/libboost-thread-dev@1.65.1.0ubuntu1 > boost1.65.1/libboost-thread1.65-dev@1.65.1+dfsg-0ubuntu5 > boost1.65.1/libboost1.65-dev@1.65.1+dfsg-0ubuntu5 > gcc-7/libstdc++-7-dev@7.5.0-3ubuntu1~18.04 > glibc/libc6-dev@2.27-3ubuntu1.4
+  and 3 more...
+  Image layer: 'RUN /bin/sh -c apt update && apt install -y build-essential '
+
+✗ Low severity vulnerability found in glibc/libc6-dev
+  Description: Improper Data Handling
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-GLIBC-345677
+  Introduced through: build-essential@12.4ubuntu1, libtool@2.4.6-2, boost-defaults/libboost-thread-dev@1.65.1.0ubuntu1, glibc/libc-bin@2.27-3ubuntu1.4, meta-common-packages@meta
+  From: build-essential@12.4ubuntu1 > glibc/libc6-dev@2.27-3ubuntu1.4
+  From: libtool@2.4.6-2 > glibc/libc6-dev@2.27-3ubuntu1.4
+  From: boost-defaults/libboost-thread-dev@1.65.1.0ubuntu1 > boost1.65.1/libboost-thread1.65-dev@1.65.1+dfsg-0ubuntu5 > boost1.65.1/libboost1.65-dev@1.65.1+dfsg-0ubuntu5 > gcc-7/libstdc++-7-dev@7.5.0-3ubuntu1~18.04 > glibc/libc6-dev@2.27-3ubuntu1.4
+  and 3 more...
+  Image layer: 'RUN /bin/sh -c apt update && apt install -y build-essential '
+
+✗ Low severity vulnerability found in glibc/libc6-dev
+  Description: Improper Input Validation
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-GLIBC-356373
+  Introduced through: build-essential@12.4ubuntu1, libtool@2.4.6-2, boost-defaults/libboost-thread-dev@1.65.1.0ubuntu1, glibc/libc-bin@2.27-3ubuntu1.4, meta-common-packages@meta
+  From: build-essential@12.4ubuntu1 > glibc/libc6-dev@2.27-3ubuntu1.4
+  From: libtool@2.4.6-2 > glibc/libc6-dev@2.27-3ubuntu1.4
+  From: boost-defaults/libboost-thread-dev@1.65.1.0ubuntu1 > boost1.65.1/libboost-thread1.65-dev@1.65.1+dfsg-0ubuntu5 > boost1.65.1/libboost1.65-dev@1.65.1+dfsg-0ubuntu5 > gcc-7/libstdc++-7-dev@7.5.0-3ubuntu1~18.04 > glibc/libc6-dev@2.27-3ubuntu1.4
+  and 3 more...
+  Image layer: 'RUN /bin/sh -c apt update && apt install -y build-essential '
+
+✗ Low severity vulnerability found in glibc/libc6-dev
+  Description: Improper Data Handling
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-GLIBC-356503
+  Introduced through: build-essential@12.4ubuntu1, libtool@2.4.6-2, boost-defaults/libboost-thread-dev@1.65.1.0ubuntu1, glibc/libc-bin@2.27-3ubuntu1.4, meta-common-packages@meta
+  From: build-essential@12.4ubuntu1 > glibc/libc6-dev@2.27-3ubuntu1.4
+  From: libtool@2.4.6-2 > glibc/libc6-dev@2.27-3ubuntu1.4
+  From: boost-defaults/libboost-thread-dev@1.65.1.0ubuntu1 > boost1.65.1/libboost-thread1.65-dev@1.65.1+dfsg-0ubuntu5 > boost1.65.1/libboost1.65-dev@1.65.1+dfsg-0ubuntu5 > gcc-7/libstdc++-7-dev@7.5.0-3ubuntu1~18.04 > glibc/libc6-dev@2.27-3ubuntu1.4
+  and 3 more...
+  Image layer: 'RUN /bin/sh -c apt update && apt install -y build-essential '
+
+✗ Low severity vulnerability found in glibc/libc6-dev
+  Description: Improper Input Validation
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-GLIBC-451499
+  Introduced through: build-essential@12.4ubuntu1, libtool@2.4.6-2, boost-defaults/libboost-thread-dev@1.65.1.0ubuntu1, glibc/libc-bin@2.27-3ubuntu1.4, meta-common-packages@meta
+  From: build-essential@12.4ubuntu1 > glibc/libc6-dev@2.27-3ubuntu1.4
+  From: libtool@2.4.6-2 > glibc/libc6-dev@2.27-3ubuntu1.4
+  From: boost-defaults/libboost-thread-dev@1.65.1.0ubuntu1 > boost1.65.1/libboost-thread1.65-dev@1.65.1+dfsg-0ubuntu5 > boost1.65.1/libboost1.65-dev@1.65.1+dfsg-0ubuntu5 > gcc-7/libstdc++-7-dev@7.5.0-3ubuntu1~18.04 > glibc/libc6-dev@2.27-3ubuntu1.4
+  and 3 more...
+  Image layer: 'RUN /bin/sh -c apt update && apt install -y build-essential '
+
+✗ Low severity vulnerability found in glibc/libc6-dev
+  Description: Integer Underflow
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-GLIBC-571383
+  Introduced through: build-essential@12.4ubuntu1, libtool@2.4.6-2, boost-defaults/libboost-thread-dev@1.65.1.0ubuntu1, glibc/libc-bin@2.27-3ubuntu1.4, meta-common-packages@meta
+  From: build-essential@12.4ubuntu1 > glibc/libc6-dev@2.27-3ubuntu1.4
+  From: libtool@2.4.6-2 > glibc/libc6-dev@2.27-3ubuntu1.4
+  From: boost-defaults/libboost-thread-dev@1.65.1.0ubuntu1 > boost1.65.1/libboost-thread1.65-dev@1.65.1+dfsg-0ubuntu5 > boost1.65.1/libboost1.65-dev@1.65.1+dfsg-0ubuntu5 > gcc-7/libstdc++-7-dev@7.5.0-3ubuntu1~18.04 > glibc/libc6-dev@2.27-3ubuntu1.4
+  and 3 more...
+  Image layer: 'RUN /bin/sh -c apt update && apt install -y build-essential '
+
+✗ Low severity vulnerability found in coreutils
+  Description: Improper Input Validation
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-COREUTILS-317469
+  Introduced through: coreutils@8.28-1ubuntu1
+  From: coreutils@8.28-1ubuntu1
+  Image layer: Introduced by your base image (ubuntu:18.04)
+
+✗ Low severity vulnerability found in binutils
+  Description: Improper Input Validation
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-BINUTILS-1056648
+  Introduced through: build-essential@12.4ubuntu1, libtool@2.4.6-2
+  From: build-essential@12.4ubuntu1 > dpkg/dpkg-dev@1.19.0.5ubuntu2.3 > binutils@2.30-21ubuntu1~18.04.5
+  From: libtool@2.4.6-2 > gcc-defaults/gcc@4:7.4.0-1ubuntu2.3 > gcc-7@7.5.0-3ubuntu1~18.04 > binutils@2.30-21ubuntu1~18.04.5
+  From: libtool@2.4.6-2 > gcc-defaults/gcc@4:7.4.0-1ubuntu2.3 > gcc-7@7.5.0-3ubuntu1~18.04 > binutils@2.30-21ubuntu1~18.04.5 > binutils/binutils-common@2.30-21ubuntu1~18.04.5
+  and 5 more...
+  Image layer: 'RUN /bin/sh -c apt update && apt install -y build-essential '
+
+✗ Low severity vulnerability found in binutils
+  Description: Improper Input Validation
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-BINUTILS-1244928
+  Introduced through: build-essential@12.4ubuntu1, libtool@2.4.6-2
+  From: build-essential@12.4ubuntu1 > dpkg/dpkg-dev@1.19.0.5ubuntu2.3 > binutils@2.30-21ubuntu1~18.04.5
+  From: libtool@2.4.6-2 > gcc-defaults/gcc@4:7.4.0-1ubuntu2.3 > gcc-7@7.5.0-3ubuntu1~18.04 > binutils@2.30-21ubuntu1~18.04.5
+  From: libtool@2.4.6-2 > gcc-defaults/gcc@4:7.4.0-1ubuntu2.3 > gcc-7@7.5.0-3ubuntu1~18.04 > binutils@2.30-21ubuntu1~18.04.5 > binutils/binutils-common@2.30-21ubuntu1~18.04.5
+  and 5 more...
+  Image layer: 'RUN /bin/sh -c apt update && apt install -y build-essential '
+
+✗ Low severity vulnerability found in binutils
+  Description: Allocation of Resources Without Limits or Throttling
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-BINUTILS-403700
+  Introduced through: build-essential@12.4ubuntu1, libtool@2.4.6-2
+  From: build-essential@12.4ubuntu1 > dpkg/dpkg-dev@1.19.0.5ubuntu2.3 > binutils@2.30-21ubuntu1~18.04.5
+  From: libtool@2.4.6-2 > gcc-defaults/gcc@4:7.4.0-1ubuntu2.3 > gcc-7@7.5.0-3ubuntu1~18.04 > binutils@2.30-21ubuntu1~18.04.5
+  From: libtool@2.4.6-2 > gcc-defaults/gcc@4:7.4.0-1ubuntu2.3 > gcc-7@7.5.0-3ubuntu1~18.04 > binutils@2.30-21ubuntu1~18.04.5 > binutils/binutils-common@2.30-21ubuntu1~18.04.5
+  and 5 more...
+  Image layer: 'RUN /bin/sh -c apt update && apt install -y build-essential '
+
+✗ Low severity vulnerability found in binutils
+  Description: Improper Input Validation
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-BINUTILS-561073
+  Introduced through: build-essential@12.4ubuntu1, libtool@2.4.6-2
+  From: build-essential@12.4ubuntu1 > dpkg/dpkg-dev@1.19.0.5ubuntu2.3 > binutils@2.30-21ubuntu1~18.04.5
+  From: libtool@2.4.6-2 > gcc-defaults/gcc@4:7.4.0-1ubuntu2.3 > gcc-7@7.5.0-3ubuntu1~18.04 > binutils@2.30-21ubuntu1~18.04.5
+  From: libtool@2.4.6-2 > gcc-defaults/gcc@4:7.4.0-1ubuntu2.3 > gcc-7@7.5.0-3ubuntu1~18.04 > binutils@2.30-21ubuntu1~18.04.5 > binutils/binutils-common@2.30-21ubuntu1~18.04.5
+  and 5 more...
+  Image layer: 'RUN /bin/sh -c apt update && apt install -y build-essential '
+
+✗ Low severity vulnerability found in binutils
+  Description: Out-of-bounds Write
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-BINUTILS-561418
+  Introduced through: build-essential@12.4ubuntu1, libtool@2.4.6-2
+  From: build-essential@12.4ubuntu1 > dpkg/dpkg-dev@1.19.0.5ubuntu2.3 > binutils@2.30-21ubuntu1~18.04.5
+  From: libtool@2.4.6-2 > gcc-defaults/gcc@4:7.4.0-1ubuntu2.3 > gcc-7@7.5.0-3ubuntu1~18.04 > binutils@2.30-21ubuntu1~18.04.5
+  From: libtool@2.4.6-2 > gcc-defaults/gcc@4:7.4.0-1ubuntu2.3 > gcc-7@7.5.0-3ubuntu1~18.04 > binutils@2.30-21ubuntu1~18.04.5 > binutils/binutils-common@2.30-21ubuntu1~18.04.5
+  and 5 more...
+  Image layer: 'RUN /bin/sh -c apt update && apt install -y build-essential '
+
+✗ Low severity vulnerability found in binutils
+  Description: Missing Release of Resource after Effective Lifetime
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-BINUTILS-842776
+  Introduced through: build-essential@12.4ubuntu1, libtool@2.4.6-2
+  From: build-essential@12.4ubuntu1 > dpkg/dpkg-dev@1.19.0.5ubuntu2.3 > binutils@2.30-21ubuntu1~18.04.5
+  From: libtool@2.4.6-2 > gcc-defaults/gcc@4:7.4.0-1ubuntu2.3 > gcc-7@7.5.0-3ubuntu1~18.04 > binutils@2.30-21ubuntu1~18.04.5
+  From: libtool@2.4.6-2 > gcc-defaults/gcc@4:7.4.0-1ubuntu2.3 > gcc-7@7.5.0-3ubuntu1~18.04 > binutils@2.30-21ubuntu1~18.04.5 > binutils/binutils-common@2.30-21ubuntu1~18.04.5
+  and 5 more...
+  Image layer: 'RUN /bin/sh -c apt update && apt install -y build-essential '
+
+✗ Low severity vulnerability found in bash
+  Description: Improper Check for Dropped Privileges
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-BASH-542613
+  Introduced through: bash@4.4.18-2ubuntu1.2
+  From: bash@4.4.18-2ubuntu1.2
+  Image layer: Introduced by your base image (ubuntu:18.04)
+
+✗ Medium severity vulnerability found in sqlite3/libsqlite3-0
+  Description: Out-of-bounds Read
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-SQLITE3-571706
+  Introduced through: gnupg2/gnupg@2.2.4-1ubuntu1.4, python3-defaults/python3@3.6.7-1~18.04, curl@7.58.0-2ubuntu3.15
+  From: gnupg2/gnupg@2.2.4-1ubuntu1.4 > gnupg2/gpg@2.2.4-1ubuntu1.4 > sqlite3/libsqlite3-0@3.22.0-1ubuntu0.4
+  From: python3-defaults/python3@3.6.7-1~18.04 > python3.6@3.6.9-1~18.04ubuntu1.4 > python3.6/libpython3.6-stdlib@3.6.9-1~18.04ubuntu1.4 > sqlite3/libsqlite3-0@3.22.0-1ubuntu0.4
+  From: curl@7.58.0-2ubuntu3.15 > curl/libcurl4@7.58.0-2ubuntu3.15 > openldap/libldap-2.4-2@2.4.45+dfsg-1ubuntu1.10 > heimdal/libgssapi3-heimdal@7.5.0+dfsg-1 > heimdal/libheimntlm0-heimdal@7.5.0+dfsg-1 > heimdal/libkrb5-26-heimdal@7.5.0+dfsg-1 > sqlite3/libsqlite3-0@3.22.0-1ubuntu0.4
+  Image layer: 'RUN /bin/sh -c apt update && apt install -y curl gnupg '
+
+✗ Medium severity vulnerability found in nghttp2/libnghttp2-14
+  Description: Resource Exhaustion
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-NGHTTP2-459190
+  Introduced through: curl@7.58.0-2ubuntu3.15
+  From: curl@7.58.0-2ubuntu3.15 > curl/libcurl4@7.58.0-2ubuntu3.15 > nghttp2/libnghttp2-14@1.30.0-1ubuntu1
+  Image layer: 'RUN /bin/sh -c apt update && apt install -y curl gnupg '
+
+✗ Medium severity vulnerability found in nghttp2/libnghttp2-14
+  Description: Allocation of Resources Without Limits or Throttling
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-NGHTTP2-459213
+  Introduced through: curl@7.58.0-2ubuntu3.15
+  From: curl@7.58.0-2ubuntu3.15 > curl/libcurl4@7.58.0-2ubuntu3.15 > nghttp2/libnghttp2-14@1.30.0-1ubuntu1
+  Image layer: 'RUN /bin/sh -c apt update && apt install -y curl gnupg '
+
+✗ Medium severity vulnerability found in krb5/libkrb5support0
+  Description: NULL Pointer Dereference
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-KRB5-1533539
+  Introduced through: curl@7.58.0-2ubuntu3.15, krb5/krb5-locales@1.16-2ubuntu0.2
+  From: curl@7.58.0-2ubuntu3.15 > curl/libcurl4@7.58.0-2ubuntu3.15 > krb5/libgssapi-krb5-2@1.16-2ubuntu0.2 > krb5/libkrb5support0@1.16-2ubuntu0.2
+  From: curl@7.58.0-2ubuntu3.15 > curl/libcurl4@7.58.0-2ubuntu3.15 > krb5/libgssapi-krb5-2@1.16-2ubuntu0.2 > krb5/libk5crypto3@1.16-2ubuntu0.2 > krb5/libkrb5support0@1.16-2ubuntu0.2
+  From: curl@7.58.0-2ubuntu3.15 > curl/libcurl4@7.58.0-2ubuntu3.15 > krb5/libgssapi-krb5-2@1.16-2ubuntu0.2 > krb5/libkrb5-3@1.16-2ubuntu0.2 > krb5/libkrb5support0@1.16-2ubuntu0.2
+  and 5 more...
+  Image layer: 'RUN /bin/sh -c apt update && apt install -y curl gnupg '
+
+✗ Medium severity vulnerability found in krb5/libkrb5support0
+  Description: Reachable Assertion
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-KRB5-396230
+  Introduced through: curl@7.58.0-2ubuntu3.15, krb5/krb5-locales@1.16-2ubuntu0.2
+  From: curl@7.58.0-2ubuntu3.15 > curl/libcurl4@7.58.0-2ubuntu3.15 > krb5/libgssapi-krb5-2@1.16-2ubuntu0.2 > krb5/libkrb5support0@1.16-2ubuntu0.2
+  From: curl@7.58.0-2ubuntu3.15 > curl/libcurl4@7.58.0-2ubuntu3.15 > krb5/libgssapi-krb5-2@1.16-2ubuntu0.2 > krb5/libk5crypto3@1.16-2ubuntu0.2 > krb5/libkrb5support0@1.16-2ubuntu0.2
+  From: curl@7.58.0-2ubuntu3.15 > curl/libcurl4@7.58.0-2ubuntu3.15 > krb5/libgssapi-krb5-2@1.16-2ubuntu0.2 > krb5/libkrb5-3@1.16-2ubuntu0.2 > krb5/libkrb5support0@1.16-2ubuntu0.2
+  and 5 more...
+  Image layer: 'RUN /bin/sh -c apt update && apt install -y curl gnupg '
+
+✗ Medium severity vulnerability found in gcc-defaults/cpp
+  Description: Information Exposure
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-GCCDEFAULTS-572168
+  Introduced through: libtool@2.4.6-2, build-essential@12.4ubuntu1
+  From: libtool@2.4.6-2 > gcc-defaults/cpp@4:7.4.0-1ubuntu2.3
+  From: build-essential@12.4ubuntu1 > gcc-defaults/g++@4:7.4.0-1ubuntu2.3 > gcc-defaults/cpp@4:7.4.0-1ubuntu2.3
+  From: libtool@2.4.6-2 > gcc-defaults/gcc@4:7.4.0-1ubuntu2.3 > gcc-defaults/cpp@4:7.4.0-1ubuntu2.3
+  and 4 more...
+  Image layer: 'RUN /bin/sh -c apt update && apt install -y build-essential '
+
+✗ Medium severity vulnerability found in gcc-8/libatomic1
+  Description: Information Exposure
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-GCC8-572149
+  Introduced through: libtool@2.4.6-2, meta-common-packages@meta
+  From: libtool@2.4.6-2 > gcc-defaults/gcc@4:7.4.0-1ubuntu2.3 > gcc-7@7.5.0-3ubuntu1~18.04 > gcc-7/libgcc-7-dev@7.5.0-3ubuntu1~18.04 > gcc-8/libatomic1@8.4.0-1ubuntu1~18.04
+  From: libtool@2.4.6-2 > gcc-defaults/gcc@4:7.4.0-1ubuntu2.3 > gcc-7@7.5.0-3ubuntu1~18.04 > gcc-7/libgcc-7-dev@7.5.0-3ubuntu1~18.04 > gcc-8/libgomp1@8.4.0-1ubuntu1~18.04
+  From: libtool@2.4.6-2 > gcc-defaults/gcc@4:7.4.0-1ubuntu2.3 > gcc-7@7.5.0-3ubuntu1~18.04 > gcc-7/libgcc-7-dev@7.5.0-3ubuntu1~18.04 > gcc-8/libitm1@8.4.0-1ubuntu1~18.04
+  and 8 more...
+  Image layer: 'RUN /bin/sh -c apt update && apt install -y libtool '
+
+✗ Medium severity vulnerability found in gcc-7/libgcc-7-dev
+  Description: Information Exposure
+  Info: https://snyk.io/vuln/SNYK-UBUNTU1804-GCC7-572147
+  Introduced through: libtool@2.4.6-2, boost-defaults/libboost-thread-dev@1.65.1.0ubuntu1, build-essential@12.4ubuntu1, meta-common-packages@meta
+  From: libtool@2.4.6-2 > gcc-defaults/gcc@4:7.4.0-1ubuntu2.3 > gcc-7@7.5.0-3ubuntu1~18.04 > gcc-7/libgcc-7-dev@7.5.0-3ubuntu1~18.04
+  From: boost-defaults/libboost-thread-dev@1.65.1.0ubuntu1 > boost1.65.1/libboost-thread1.65-dev@1.65.1+dfsg-0ubuntu5 > boost1.65.1/libboost1.65-dev@1.65.1+dfsg-0ubuntu5 > gcc-7/libstdc++-7-dev@7.5.0-3ubuntu1~18.04 > gcc-7/libgcc-7-dev@7.5.0-3ubuntu1~18.04
+  From: boost-defaults/libboost-thread-dev@1.65.1.0ubuntu1 > boost1.65.1/libboost-thread1.65-dev@1.65.1+dfsg-0ubuntu5 > boost1.65.1/libboost1.65-dev@1.65.1+dfsg-0ubuntu5 > gcc-7/libstdc++-7-dev@7.5.0-3ubuntu1~18.04
+  and 11 more...
+  Image layer: 'RUN /bin/sh -c apt update && apt install -y build-essential '
+
+
+
+Package manager:   deb
+Project name:      docker-image|poc-lite
+Docker image:      poc-lite:1.0.0
+Platform:          linux/amd64
+Base image:        ubuntu:18.04
+
+Tested 246 dependencies for known vulnerabilities, found 42 vulnerabilities.
+
+Base Image    Vulnerabilities  Severity
+ubuntu:18.04  23               0 high, 2 medium, 21 low
+
+Recommendations for base image upgrade:
+
+Major upgrades
+Base Image    Vulnerabilities  Severity
+ubuntu:20.04  16               0 high, 1 medium, 15 low
+
+
+For more free scans that keep your images secure, sign up to Snyk at https://dockr.ly/3ePqVcp
+

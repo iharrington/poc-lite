@@ -1,0 +1,22 @@
+- name: Continuous Integration
+  hosts: localhost
+  connection: local
+
+  tasks:
+
+    - set_fact:
+        version: 1.0.0
+
+    - name: Build poc-lite Docker Image
+      command: docker build -f Dockerfile -t iharrington/poc-lite:{{ item }} .
+      args:
+        chdir: "../"
+      loop:
+        - latest
+        - "{{ version }}"
+
+    - name: Push poc-lite Docker Image to dockerhub
+      command: docker push iharrington/poc-lite:{{ item }}
+      loop:
+        - latest
+        - "{{ version }}"

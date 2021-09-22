@@ -1,0 +1,44 @@
+{{/*https://kubernetes.io/docs/tutorials/stateful-application/basic-stateful-set/*/}}
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: {{ template "litecoin.fullname" . }}
+  labels:
+    app: {{ template "litecoin.name" . }}
+    chart: {{ template "litecoin.chart" . }}
+    draft: {{ .Values.draft | default "draft-app" }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  serviceName: {{ template "litecoin.fullname" . }}
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ template "litecoin.fullname" . }}
+  template:
+    metadata:
+      labels:
+        app: {{ template "litecoin.name" . }}
+        draft: {{ .Values.draft | default "draft-app" }}
+        release: {{ .Release.Name }}
+      annotations:
+        buildID: {{ .Values.buildID | default "" | quote }}
+    spec:
+      containers:
+        - name: {{ .Chart.Name }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          ports:
+            - containerPort: {{ .Values.statefulset.containerPort }}
+              name: {{ template "litecoin.fullname" . }}
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          volumeMounts:
+            - name: {{ template "litecoin.fullname" . }}
+              mountPath: /mnt/data/
+  volumeClaimTemplates:
+    - metadata:
+        name: {{ template "litecoin.fullname" . }}
+      spec:
+        accessModes: [ "ReadWriteOnce" ]
+        resources:
+          requests:
+            storage: 2Gi

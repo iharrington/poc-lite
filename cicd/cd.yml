@@ -1,0 +1,14 @@
+- name: Continuous Deployment
+  hosts: localhost
+  connection: local
+
+  tasks:
+
+    - set_fact:
+        version: 1.0.0 #version can be "latest" (non-production)
+
+    - name: Deploy litecoin Helm Chart
+      command: helm upgrade --install litecoin ./charts/litecoin --version {{ version }}
+
+    - name: Check logs
+      command: kubectl logs -l app=litecoin

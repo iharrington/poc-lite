@@ -1,0 +1,4 @@
+apiVersion: v1
+description: litecoin Helm chart for Kubernetes
+name: litecoin
+version: 1.0.0
